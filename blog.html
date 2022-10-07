@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon2.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -34,93 +34,94 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script>
+
+    function effect_r(event){
+        var img1 = document.querySelector('.img-hover');
+        img1.style.transition =' 1s ease';
+
+        img1.style.transform = "translate(0%,0%)";
+    }
+
+    function effect(event){
+        var img1 = document.querySelector('.img-hover');
+
+        img1.style.transition =' 0.1s ease';
+
+        var x1 = event.clientX * 20 /window.innerWidth +"%";
+        var y1 = event.clientY * 20 /window.innerHeight +"%";
+
+        for (var i=0; i <2; i++){
+            img1.style.transform = "translate(-"+x1+",-"+y1+")";
+        }
+    }
+</script>
+
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <section id="topbar" class="topbar d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
+<section id="topbar" class="topbar d-flex align-items-center">
+  <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">solucoes.rgr@gmail.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>61 9 9268-3250</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+          <a href="https://www.instagram.com/rgrsolucoes/" class="instagram"><i class="bi bi-instagram"></i></a>
       </div>
-    </div>
-  </section><!-- End Top Bar -->
+</section><!-- End Top Bar -->
 
-  <header id="header" class="header d-flex align-items-center">
+<header id="header" class="header d-flex align-items-center pb-2">
 
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Impact<span>.</span></h1>
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a class="navbar-brand" href="#">
+          <img src="./assets/img/RGR.png" alt="RGR" height="60px">
       </a>
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+          <ul>
+              <li><a href="#hero">Início</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#contact">Contato</a></li>
+          </ul>
       </nav><!-- .navbar -->
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
-    </div>
-  </header><!-- End Header -->
-  <!-- End Header -->
+  </div>
+</header><!-- End Header -->
+<!-- End Header -->
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-image: url('');">
-        <div class="container position-relative">
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-6 text-center">
-              <h2>Blog</h2>
-              <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-            </div>
+    <!-- ======= Hero Section ======= -->
+<section id="hero" class="hero">
+  <div class="container position-relative" onmousemove="effect(event)" onmouseout="effect_r(event)">
+      <div class="row gy-5" data-aos="fade-in">
+          <div class="col-lg-7 order-2 order-lg-2 d-flex flex-column justify-content-center text-center text-lg-center">
+              <h2>O QUE É O EPS?<span></span></h2>
+              <p>O termo "EPS" é nada mais que a sigla internacional do Poliestireno Expandido (Expanded Polystyrene), conhecido popularmente como Isopor.
+
+                No Brasil, o termo EPS também é utilizado referindo-se ao sistema construtivo inovador com painéis autoportantes com núcleo de isopor.</p>
+              <div class="d-flex justify-content-center justify-content-lg-center">
+                  <a href="#about" class="btn-get-started">Saiba mais</a>
+              </div>
           </div>
-        </div>
+          <div class="col-lg-5 order-1 order-lg-1 d-flex justify-content-center">
+              <img src="assets/img/eps3.png" class="img-fluid  img-hover" alt="" data-aos="zoom-out" data-aos-delay="100" >
+          </div>
       </div>
-      <nav>
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Blog</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Breadcrumbs -->
+  </div>
+
+  
+  </div>
+
+  </div>
+</section>
+<!-- End Hero Section -->
 
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog">
@@ -300,75 +301,72 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+<footer id="footer" class="footer">
 
-    <div class="container">
+  <div class="container">
       <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span>Impact</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <div class="col-lg-5 col-md-12 footer-info">
+              <a href="index.html" class="logo d-flex align-items-center">
+                  <span>RGR</span>
+              </a>
+              <p>Soluções e Representações.</p>
+              <div class="social-links d-flex mt-4">
+                  <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                  
+              </div>
           </div>
-        </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
+          <div class="col-lg-2 col-6 footer-links">
+              <h4>Links Úteis</h4>
+              <ul>
+                  <li><a href="#">Início</a></li>
+                  <li><a href="#">Sobre</a></li>
+                  <li><a href="#">Serviços</a></li>
+                  <li><a href="#">Contato</a></li>
+              </ul>
+          </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
+          <div class="col-lg-2 col-6 footer-links">
+              <h4>Nossos Serviços</h4>
+              <ul>
+                  <li><a href="#">Aquisição de EPS</a></li>
+                  <li><a href="#">Projetos de Engenharia</a></li>
+                  <li><a href="#">Confecção de Vigotas Treliçadas</a></li>
+                  <li><a href="#">Acompanhamento de Obras</a></li>
+              </ul>
+          </div>
 
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> info@example.com<br>
-          </p>
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+              <h4>Entre em contato:</h4>
+              <p>
+                  SRTVN, <br>
+                  Centro Empresarial Norte,<br>
+                  Torre B Sala 635,  <br>
+                  Brasília-DF <br>
+                  <strong>Telefone:</strong> +55 61 9 9268-3250<br>
+                  <strong>Email:</strong> solucoes.rgr@gmail.com<br>
+              </p>
 
-        </div>
+          </div>
 
       </div>
-    </div>
+  </div>
 
-    <div class="container mt-4">
+  <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>RGR Soluções e Representações</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
+          Desenvolvido por <a href="https://bootstrapmade.com/">RGR Soluções e Representações.</a>
       </div>
-    </div>
+  </div>
 
-  </footer><!-- End Footer -->
-  <!-- End Footer -->
+</footer><!-- End Footer -->
+<!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
