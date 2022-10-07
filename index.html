@@ -35,6 +35,29 @@
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
+
+    <script>
+
+        function effect_r(event){
+            var img1 = document.querySelector('.img-hover');
+            img1.style.transition =' 1s ease';
+
+            img1.style.transform = "translate(0%,0%)";
+        }
+
+        function effect(event){
+            var img1 = document.querySelector('.img-hover');
+
+            img1.style.transition =' 0.1s ease';
+
+            var x1 = event.clientX * 20 /window.innerWidth +"%";
+            var y1 = event.clientY * 20 /window.innerHeight +"%";
+
+            for (var i=0; i <2; i++){
+                img1.style.transform = "translate(-"+x1+",-"+y1+")";
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -75,7 +98,7 @@
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="hero">
-    <div class="container position-relative">
+    <div class="container position-relative" onmousemove="effect(event)" onmouseout="effect_r(event)">
         <div class="row gy-5" data-aos="fade-in">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
                 <h2>Bem-vindo à <span>RGR.</span></h2>
@@ -86,8 +109,8 @@
                             class="bi bi-play-circle"></i><span>Assista</span></a>
                 </div>
             </div>
-            <div class="col-lg-6 order-1 order-lg-2">
-                <img src="assets/img/hero-img2.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+            <div class="col-lg-6 order-1 order-lg-2 position-relative">
+                <img src="assets/img/hero-img2.png" class="img-fluid img-hover" alt="" data-aos="zoom-out" data-aos-delay="100">
             </div>
         </div>
     </div>
