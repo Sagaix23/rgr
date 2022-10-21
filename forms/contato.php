@@ -11,13 +11,13 @@ $mensagem = addslashes($_POST['message']);
 $to = "solucoes.rgr@gmail.com";
 $subject = "Contato - RGR";
 $body = "Nome: ".$nome. "-\n".
-        "Telefone:" .$telefone."\n" .
-        "Email:" .$email."\n" .
-        "Mensagem:" .$mensagem.
+        "Telefone: ".$telefone."\n" .
+        "Email: ".$email."\n" .
+        "Mensagem: ".$mensagem."\n\n\n\n\n" .
 
-$header = "From:soluçoes.rgr@gmail.com"."\r\n".
-            "Reply-to:".$email. "\e\n".
-            "X=Mailer:PHP/".phpversion();
+$header = "From: formulario@solucoesrgr.com.br"."\r\n".
+            "Reply-to: ".$email. "\e\n".
+            "X=Mailer: PHP/".phpversion();
             
 if(mail($to,$subject,$body,$header)){
   echo("Email enviado com sucesso!");
