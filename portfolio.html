@@ -58,14 +58,33 @@
 <header id="header" class="header d-flex align-items-center pb-2">
 
   <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
           <img src="./assets/img/RGR.png" alt="RGR" height="60px">
       </a>
       <nav id="navbar" class="navbar">
           <ul>
-              <li><a href="#hero">Início</a></li>
+              <li><a href="index.html#hero">Início</a></li>
               <li><a href="index.html#about">Sobre</a></li>
-              <li><a href="#services">Serviços</a></li>
+              <li class="dropdown"><a href="#"><span>Serviços</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                  <ul>
+                    <li><a href="eps.html">Aquisição de Painéis Monolíticos (EPS)</a></li>
+                    <li><a href="index.html#services">Confecção de Vigotas Treliçadas</a></li>
+                    <li><a href="index.html#services">Acompanhamento de Obras</a></li>
+                    <li><a href="index.html#services">Consultorias</a></li>
+                    <li class="dropdown"><a href="#"><span>Projetos</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                      <ul>
+                        <li><a href="#" >Projeto Estrutural</a></li>
+                        <li><a href="#" >Projeto Elétrico</a></li>
+                        <li><a href="#" >Projeto Hidráulico</a></li>
+                        <li><a href="#" >Projeto Hidrossanitário</a></li>
+                        <li><a href="#" >Projeto de Dados</a></li>
+                        <li><a href="#" >Projeto de Lajes</a></li>
+                      </ul>
+                    </li>
+                    
+                    
+                  </ul>
+                </li>
               <li><a href="#contact">Contato</a></li>
           </ul>
       </nav><!-- .navbar -->
@@ -74,6 +93,8 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
   </div>
+</header><!-- End Header -->
+<!-- End Header -->
 </header><!-- End Header -->
 <!-- End Header -->
 
@@ -293,22 +314,18 @@
               </a>
               <p>Soluções e Representações.</p>
               <div class="social-links d-flex mt-4">
-                  <a href="https://api.whatsapp.com/send/?phone=5561993984802&text&type=phone_number&app_absent=0" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
-                  
-              </div>
-              <div class="social-links d-flex mt-4">
-                  <a href="https://www.instagram.com/rgrsolucoes/" class="instagram"><i class="bi bi-instagram"></i></a>
-                  
-              </div>
+                <a href="https://api.whatsapp.com/send/?phone=5561993984802&text&type=phone_number&app_absent=0" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.instagram.com/rgrsolucoes/" class="instagram"><i class="bi bi-instagram"></i></a>
+            </div>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
               <h4>Links Úteis</h4>
               <ul>
-                  <li><a href="#">Início</a></li>
-                  <li><a href="#">Sobre</a></li>
-                  <li><a href="#">Serviços</a></li>
-                  <li><a href="#">Contato</a></li>
+                  <li><a href="index.html#hero">Início</a></li>
+                  <li><a href="index.html#about">Sobre</a></li>
+                  <li><a href="index.html#services">Serviços</a></li>
+                  <li><a href="index.html#contact">Contato</a></li>
               </ul>
           </div>
 
@@ -317,38 +334,38 @@
               <ul>
                   <li><a href="eps.html" target="_blank" rel="noopener noreferrer">Aquisição de EPS</a></li>
                   <li><a href="portfolio.html" target="_blank" rel="noopener noreferrer">Projetos de Engenharia</a></li>
-                  <li><a href="#contact">Confecção de Vigotas Treliçadas</a></li>
-                  <li><a href="#contact">Acompanhamento de Obras</a></li>
+                  <li><a href="index.html#services">Confecção de Vigotas Treliçadas</a></li>
+                  <li><a href="index.html#services">Acompanhamento de Obras</a></li>
               </ul>
           </div>
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-              <h4>Entre em contato:</h4>
-              <p>
-                  SRTVN, <br>
-                  Centro Empresarial Norte,<br>
-                  Torre B Sala 635,  <br>
-                  Brasília-DF <br>
-                  <strong>Telefone:</strong> +55 61 9 9398-4802<br>
-                  <strong>Email:</strong> solucoes.rgr@gmail.com<br>
-              </p>
+            <h4 class="p-0">Entre em contato:</h4>
+            <p>
+                SRTVN, <br>
+                Centro Empresarial Norte,<br>
+                Torre B Sala 635,  <br>
+                Brasília-DF <br>
+                <strong>Telefone:</strong> +55 61 9 9398-4802<br>
+                <strong>Email:</strong> solucoes.rgr@gmail.com<br>
+            </p>
 
-          </div>
+        </div>
 
       </div>
   </div>
 
   <div class="container mt-4">
-      <div class="copyright">
-          &copy; Copyright <strong><span>RGR Soluções e Representações</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-          Desenvolvido por <a href="https://bootstrapmade.com/">RGR Soluções e Representações.</a>
-      </div>
+    <div class="copyright">
+        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
+        Desenvolvido por <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
   </div>
 
 </footer><!-- End Footer -->
