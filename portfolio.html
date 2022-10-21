@@ -42,23 +42,31 @@
 <section id="topbar" class="topbar d-flex align-items-center">
   <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">solucoes.rgr@gmail.com</a></i>
+          <i class="bi bi-envelope d-flex align-items-center" target="_blank" rel="noopener noreferrer"> <a href="mailto:contact@example.com">solucoes.rgr@gmail.com</a></i>
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>61 9 9398-4802</span></i>
       </div>
+
       <div class="social-links d-none d-md-flex align-items-center">
-          <a href="https://www.instagram.com/rgrsolucoes/" class="instagram"><i class="bi bi-instagram"></i></a>
-      </div>
+          <a href="https://api.whatsapp.com/send/?phone=5561993984802&text&type=phone_number&app_absent=0" class="whatsapp" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+  
+      <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://www.instagram.com/rgrsolucoes/" class="instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+      
+          </div>
 </section><!-- End Top Bar -->
 
 <header id="header" class="header d-flex align-items-center pb-2">
 
   <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="#">
           <img src="./assets/img/RGR.png" alt="RGR" height="60px">
       </a>
       <nav id="navbar" class="navbar">
           <ul>
               <li><a href="#hero">Início</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#contact">Contato</a></li>
           </ul>
       </nav><!-- .navbar -->
 
@@ -101,19 +109,19 @@
           <div class="slides-1 portfolio-details-slider swiper">
             <div class="swiper-wrapper align-items-center">
 
-              <div class="swiper-slide">
+              <div class="swiper-slide text-center">
                 <img src="assets/img/portfolio/estrutura 1.png" alt="">
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide text-center">
                 <img src="assets/img/portfolio/ESTRUTURAEPS.png" alt="">
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide text-center">
                 <img src="assets/img/portfolio/QUADRO ELETRICO.png" alt="">
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide text-center">
                 <img src="assets/img/portfolio/instalações2.png" alt="">
               </div>
 
@@ -142,9 +150,9 @@
 
               <div class="testimonial-item">
                 <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
+                  <!-- <i class="bi bi-quote quote-icon-left"></i>
                   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bi bi-quote quote-icon-right"></i>
+                  <i class="bi bi-quote quote-icon-right"></i> -->
                 </p>
                 <div>
                   
@@ -241,10 +249,13 @@
                                      required>
                           </div>
                           <div class="col-md-6 form-group mt-3 mt-md-0">
-                              <input type="email" class="form-control" name="email" id="email"
-                                     placeholder="E-mail" required>
+                              <input type="email" class="form-control" name="phone" id="phone"
+                                     placeholder="Telefone" required>
                           </div>
                       </div>
+                      <div class="form-group mt-3">
+                        <input type="text" class="form-control" name="subject" id="email" placeholder="E-mail"
+                               required>
                       <div class="form-group mt-3">
                           <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto"
                                  required>
@@ -282,7 +293,11 @@
               </a>
               <p>Soluções e Representações.</p>
               <div class="social-links d-flex mt-4">
-                  <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="https://api.whatsapp.com/send/?phone=5561993984802&text&type=phone_number&app_absent=0" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                  
+              </div>
+              <div class="social-links d-flex mt-4">
+                  <a href="https://www.instagram.com/rgrsolucoes/" class="instagram"><i class="bi bi-instagram"></i></a>
                   
               </div>
           </div>
@@ -290,7 +305,7 @@
           <div class="col-lg-2 col-6 footer-links">
               <h4>Links Úteis</h4>
               <ul>
-                  <li><a href="index.html">Início</a></li>
+                  <li><a href="#">Início</a></li>
                   <li><a href="#">Sobre</a></li>
                   <li><a href="#">Serviços</a></li>
                   <li><a href="#">Contato</a></li>
@@ -300,10 +315,10 @@
           <div class="col-lg-2 col-6 footer-links">
               <h4>Nossos Serviços</h4>
               <ul>
-                  <li><a href="#">Aquisição de EPS</a></li>
-                  <li><a href="#">Projetos de Engenharia</a></li>
-                  <li><a href="#">Confecção de Vigotas Treliçadas</a></li>
-                  <li><a href="#">Acompanhamento de Obras</a></li>
+                  <li><a href="eps.html" target="_blank" rel="noopener noreferrer">Aquisição de EPS</a></li>
+                  <li><a href="portfolio.html" target="_blank" rel="noopener noreferrer">Projetos de Engenharia</a></li>
+                  <li><a href="#contact">Confecção de Vigotas Treliçadas</a></li>
+                  <li><a href="#contact">Acompanhamento de Obras</a></li>
               </ul>
           </div>
 
